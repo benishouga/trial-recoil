@@ -12,6 +12,5 @@
     "resolveJsonModule": true,
     "jsx": "react",
     "rootDir": "src"
-  },
-  "include": ["src", "types"]
+  }
 }
