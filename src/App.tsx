@@ -2,6 +2,7 @@ import React from 'react';
 import { RecoilAsync } from './RecoilAsync';
 import { ContextSimple } from './ContextSimple';
 import { RecoilSimple } from './RecoilSimple';
+import { RecoilMultipleRoot } from './RecoilMultipleRoot';
 import { TinyContextSimple } from './TinyContextSimple';
 import { CodePreviewer } from './CodePreviewer';
 
@@ -20,5 +21,8 @@ export const App = () => (
     <hr />
     <RecoilAsync />
     <CodePreviewer name="RecoilAsync.tsx" code={require('!!raw-loader!./RecoilAsync.tsx').default} />
+    <hr />
+    <RecoilMultipleRoot />
+    <CodePreviewer name="RecoilMultipleRoot.tsx" code={require('!!raw-loader!./RecoilMultipleRoot.tsx').default} />
   </>
 );
