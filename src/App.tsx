@@ -5,6 +5,7 @@ import { RecoilSimple } from './RecoilSimple';
 import { RecoilMultipleRoot } from './RecoilMultipleRoot';
 import { TinyContextSimple } from './TinyContextSimple';
 import { CodePreviewer } from './CodePreviewer';
+import { NestedRoot } from './NestedRoot';
 
 export const App = () => (
   <>
@@ -24,5 +25,8 @@ export const App = () => (
     <hr />
     <RecoilMultipleRoot />
     <CodePreviewer name="RecoilMultipleRoot.tsx" code={require('!!raw-loader!./RecoilMultipleRoot.tsx').default} />
+    <hr />
+    <NestedRoot />
+    <CodePreviewer name="NestedRoot.tsx" code={require('!!raw-loader!./NestedRoot.tsx').default} />
   </>
 );
